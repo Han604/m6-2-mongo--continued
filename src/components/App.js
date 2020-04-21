@@ -22,8 +22,8 @@ function App() {
 
   React.useEffect(() => {
     fetch('/api/seat-availability')
-      .then(res => res.json())
-      .then(receiveSeatInfoFromServer);
+    .then(res => res.json())
+    .then(receiveSeatInfoFromServer);
   }, [receiveSeatInfoFromServer]);
 
   return (
